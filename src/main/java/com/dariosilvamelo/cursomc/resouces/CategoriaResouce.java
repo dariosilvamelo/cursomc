@@ -1,8 +1,5 @@
 package com.dariosilvamelo.cursomc.resouces;
 
-import java.util.ArrayList;
-
-import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +20,9 @@ public class CategoriaResouce {
 	
     @RequestMapping(value="/{id}", method=RequestMethod.GET)
     
-	public ResponseEntity<?> find(@PathVariable Integer id){
+	
+    
+    public ResponseEntity<?> find(@PathVariable Integer id){
     	
     	Categoria obj = service.busca(id);
     	
